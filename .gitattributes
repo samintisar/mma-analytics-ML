@@ -1,0 +1,119 @@
+# Git LFS Configuration for MMA Analytics ML Project
+# Tracks large files including videos, models, and datasets
+
+# Video Files - UFC fight footage and processed segments
+*.mp4 filter=lfs diff=lfs merge=lfs -text
+*.mkv filter=lfs diff=lfs merge=lfs -text
+*.avi filter=lfs diff=lfs merge=lfs -text
+*.mov filter=lfs diff=lfs merge=lfs -text
+*.wmv filter=lfs diff=lfs merge=lfs -text
+*.flv filter=lfs diff=lfs merge=lfs -text
+*.webm filter=lfs diff=lfs merge=lfs -text
+
+# Model Files - ML checkpoints and trained models
+*.pt filter=lfs diff=lfs merge=lfs -text
+*.pth filter=lfs diff=lfs merge=lfs -text
+*.onnx filter=lfs diff=lfs merge=lfs -text
+*.pb filter=lfs diff=lfs merge=lfs -text
+*.h5 filter=lfs diff=lfs merge=lfs -text
+*.hdf5 filter=lfs diff=lfs merge=lfs -text
+*.pkl filter=lfs diff=lfs merge=lfs -text
+*.joblib filter=lfs diff=lfs merge=lfs -text
+*.bin filter=lfs diff=lfs merge=lfs -text
+
+# Dataset Files - Large datasets and archives
+*.zip filter=lfs diff=lfs merge=lfs -text
+*.tar filter=lfs diff=lfs merge=lfs -text
+*.tar.gz filter=lfs diff=lfs merge=lfs -text
+*.tgz filter=lfs diff=lfs merge=lfs -text
+*.7z filter=lfs diff=lfs merge=lfs -text
+*.rar filter=lfs diff=lfs merge=lfs -text
+*.parquet filter=lfs diff=lfs merge=lfs -text
+*.feather filter=lfs diff=lfs merge=lfs -text
+*.arrow filter=lfs diff=lfs merge=lfs -text
+
+# Audio Files - Fight commentary and audio analysis
+*.wav filter=lfs diff=lfs merge=lfs -text
+*.mp3 filter=lfs diff=lfs merge=lfs -text
+*.flac filter=lfs diff=lfs merge=lfs -text
+*.aac filter=lfs diff=lfs merge=lfs -text
+*.ogg filter=lfs diff=lfs merge=lfs -text
+
+# Image Files - High-resolution fight images and frames
+*.tiff filter=lfs diff=lfs merge=lfs -text
+*.tif filter=lfs diff=lfs merge=lfs -text
+*.png filter=lfs diff=lfs merge=lfs -text
+*.jpg filter=lfs diff=lfs merge=lfs -text
+*.jpeg filter=lfs diff=lfs merge=lfs -text
+*.bmp filter=lfs diff=lfs merge=lfs -text
+*.webp filter=lfs diff=lfs merge=lfs -text
+
+# Data Files - Large structured data files
+*.csv filter=lfs diff=lfs merge=lfs -text
+*.json filter=lfs diff=lfs merge=lfs -text
+*.xml filter=lfs diff=lfs merge=lfs -text
+*.db filter=lfs diff=lfs merge=lfs -text
+*.sqlite filter=lfs diff=lfs merge=lfs -text
+*.sqlite3 filter=lfs diff=lfs merge=lfs -text
+
+# Configuration and Log Files (small, keep in git)
+*.yml text
+*.yaml text
+*.json text
+*.md text
+*.txt text
+*.py text
+*.sh text
+*.bat text
+*.toml text
+*.ini text
+*.cfg text
+*.conf text
+
+# Compiled Files (exclude from git)
+*.pyc
+*.pyo
+*.pyd
+__pycache__/
+*.so
+*.dll
+*.dylib
+
+# IDE and Editor Files (exclude from git)
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS Files (exclude from git)
+.DS_Store
+Thumbs.db
+*.tmp
+*.temp
+
+# Virtual Environment (exclude from git)
+venv/
+env/
+.venv/
+.env/
+
+# Jupyter Notebook Checkpoints (exclude from git)
+.ipynb_checkpoints/
+
+# pytest cache (exclude from git)
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Node modules (exclude from git)
+node_modules/
+
+# Documentation build (exclude from git)
+docs/build/
+site/
+
+# Model outputs and logs (exclude from git)
+logs/
+outputs/
+results/
